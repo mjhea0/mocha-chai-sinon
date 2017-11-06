@@ -1,0 +1,174 @@
+{
+  "all": {
+    "success": {
+      "res": {
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json"
+        }
+      },
+      "body": {
+        "status": "success",
+        "data": [
+          {
+            "id": 4,
+            "name": "The Land Before Time",
+            "genre": "Fantasy",
+            "rating": 7,
+            "explicit": false
+          },
+          {
+            "id": 5,
+            "name": "Jurassic Park",
+            "genre": "Science Fiction",
+            "rating": 9,
+            "explicit": true
+          },
+          {
+            "id": 6,
+            "name": "Ice Age: Dawn of the Dinosaurs",
+            "genre": "Action/Romance",
+            "rating": 5,
+            "explicit": false
+          }
+        ]
+      }
+    }
+  },
+  "single": {
+    "success": {
+      "res": {
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json"
+        }
+      },
+      "body": {
+        "status": "success",
+        "data": [
+          {
+            "id": 4,
+            "name": "The Land Before Time",
+            "genre": "Fantasy",
+            "rating": 7,
+            "explicit": false
+          }
+        ]
+      }
+    },
+    "failure": {
+      "res": {
+        "statusCode": 404,
+        "headers": {
+          "content-type": "application/json"
+        }
+      },
+      "body": {
+        "status": "error",
+        "message": "That movie does not exist."
+      }
+    }
+  },
+  "add": {
+    "success": {
+      "res": {
+        "statusCode": 201,
+        "headers": {
+          "content-type": "application/json"
+        }
+      },
+      "body": {
+        "status": "success",
+        "data": [
+          {
+            "id": 5,
+            "name": "Titanic",
+            "genre": "Drama",
+            "rating": 8,
+            "explicit": true
+          }
+        ]
+      }
+    },
+    "failure": {
+      "res": {
+        "statusCode": 400,
+        "headers": {
+          "content-type": "application/json"
+        }
+      },
+      "body": {
+        "status": "error",
+        "message": "Something went wrong."
+      }
+    }
+  },
+  "update": {
+    "success": {
+      "res": {
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json"
+        }
+      },
+      "body": {
+        "status": "success",
+        "data": [
+          {
+            "id": 5,
+            "name": "Titanic",
+            "genre": "Drama",
+            "rating": 9,
+            "explicit": true
+          }
+        ]
+      }
+    },
+    "failure": {
+      "res": {
+        "statusCode": 404,
+        "headers": {
+          "content-type": "application/json"
+        }
+      },
+      "body": {
+        "status": "error",
+        "message": "That movie does not exist."
+      }
+    }
+  },
+  "delete": {
+    "success": {
+      "res": {
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json"
+        }
+      },
+      "body": {
+        "status": "success",
+        "data": [
+          {
+            "id": 5,
+            "name": "Titanic",
+            "genre": "Drama",
+            "rating": 9,
+            "explicit": true
+          }
+        ]
+      }
+    },
+    "failure": {
+      "res": {
+        "statusCode": 404,
+        "headers": {
+          "content-type": "application/json"
+        }
+      },
+      "body": {
+        "status": "error",
+        "message": "That movie does not exist."
+      }
+    }
+  }
+}
